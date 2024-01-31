@@ -3,10 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(soma(112, 10))
-	fmt.Println(subtract(112, 10))
-	fmt.Println(multiply(112, 10))
-	fmt.Println(divide(112, 10))
+	runProgram(112, 10)
+}
+
+func runProgram(a, b int) {
+	fmt.Println(soma(a, b))
+	fmt.Println(subtract(a, b))
+	fmt.Println(multiply(a, b))
+	fmt.Println(divide(a, b))
 }
 
 func soma(a int, b int) int {
